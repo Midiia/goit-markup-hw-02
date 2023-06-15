@@ -57,6 +57,9 @@
     color: var(--pressed-state-color);
 }
 
+.address-list {
+    font-style: normal;
+}
 
 .adress-link {
     font-family: var(--title-font);
@@ -126,7 +129,7 @@ body {
   | Section benefits first page
   |============================
 */
-.main.page-title {
+.main-page-title {
     font-family: var(--title-font);
     font-weight: 500;
     font-size: 20px;
@@ -135,7 +138,7 @@ body {
     color: var(--modal-overlay-color);
 }
 
-.main.page-text {
+.main-page-text {
     font-family: var(--title-font);
     font-weight: 400;
     font-size: 16px;
@@ -144,6 +147,7 @@ body {
     letter-spacing: 0.02em;
     color: var(--body-text-color);
 }
+
 /**
   |============================
   | Secction 'Doing' first page
@@ -191,25 +195,6 @@ body {
 .filter-button:focus {
     color: var(--white-background-color);
     background: var(--pressed-state-color);
-}
-/**
-  |============================
-  | Sections pictures
-  |============================
-*/
-.picture-title {
-    font-family: var(--title-font);
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    color: var(--dark-color)
-}
-.picture-text {
-    font-family: var(--title-font);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: var(--body-text-color);
 }
 
 /**
