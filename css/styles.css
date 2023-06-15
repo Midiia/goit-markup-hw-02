@@ -21,27 +21,53 @@
 */
 .header {
 }
-.header-logo {
+.link-logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
-    line-height: 21px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
     cursor: pointer;
     color: var(--primery-brand-color);
 }
+
+.logo-dark {
+    color: var(--hero-background-color);
+}
+
 .header-link {
     font-family: var(--title-font);
     font-size: 16px;
     font-weight: 500;
-    Line height: 24px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     cursor: pointer;
+    list-style: none;
+    text-decoration: none;
     color: var(--dark-color);
 }
-.adress > li {
+
+.nav-list .header-link:hover,
+.nav-list .header-link:focus {
+    color: var(--pressed-state-color);
+}
+
+
+.adress-link {
     font-family: var(--title-font);
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    font-style: normal;
+    list-style: none;
+    text-decoration: none;
     color: var(--body-text-color);
+}
+.adress-link:hover,
+.adress-link:focus {
+    color: var(--pressed-state-color);
 }
 
 /**
@@ -50,10 +76,100 @@
   |============================
 */
 body {
-    font-family: 'Roboto', sans-serif;
-    color: var(--dark-color);
+    font-family: var(--title-font);
+    color: var(--body-text-color);
+    background-color: var(--white-background-color);
+    list-style: none;
+    text-decoration: none;
+}
+ul, ol {list-style-type: none;}
+
+/**
+  |============================
+  | Section hero first page
+  |============================
+*/
+.hero-section {
+    background-color: var(--dark-color);
 }
 
+.hero-title {
+    font-family: var(--title-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--white-background-color);
+}
+
+.hero-button {
+    font-family: var(--title-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    color: var(--white-background-color);
+    background-color: var(--primery-brand-color);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    color: var(--pressed-state-color)
+}
+/**
+  |============================
+  | Section benefits first page
+  |============================
+*/
+.main.page-title {
+    font-family: var(--title-font);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--modal-overlay-color);
+}
+
+.main.page-text {
+    font-family: var(--title-font);
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--body-text-color);
+}
+/**
+  |============================
+  | Secction 'Doing' first page
+  |============================
+*/
+.page-title {
+    font-family: var(--title-font);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--hero-background-color); 
+}
+/**
+  |============================
+  | Team section
+  |============================
+*/
+.team-section {
+    background-color: var(--light-color);
+}
+
+.team-list {
+    background-color: var(--white-background-color);
+}
 /**
   |============================
   | Buttons
@@ -63,7 +179,9 @@ body {
     font-family: var(--title-font);
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    list-style: none;
     cursor: pointer;
     color: var(--primery-brand-color);
     background-color: var(--light-color);
@@ -73,13 +191,13 @@ body {
     color: var(--white-background-color);
     background: var(--pressed-state-color);
 }
-
 /**
   |============================
-  | Sections picture
+  | Sections pictures
   |============================
 */
-.section-pictures {
+.pictures-list {
+    list-style: none;
 }
 .picture-title {
     font-family: var(--title-font);
@@ -101,17 +219,19 @@ body {
   | Fotter
   |============================
 */
-.logo-footer {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 21px;
-    color: var(--primery-brand-color);
+.footer {
+    background-color: var(--hero-background-color);
 }
+
+.logo-white {
+    color: var(--light-color);
+}
+
 .text-footer {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--title-font);
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
-    color: var(--light-color);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--light-color); 
 }
