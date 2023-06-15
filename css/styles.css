@@ -22,6 +22,11 @@
 .link {
     text-decoration: none;
 }
+
+.list {
+    list-style: none;
+}
+
 .link-logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -29,21 +34,12 @@
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    text-decoration: none;
     cursor: pointer;
     color: var(--primery-brand-color);
 }
 
 .logo-dark {
     color: var(--hero-background-color);
-}
-
-.list {
-    list-style: none;
-}
-
-.adress-list {
-    font-style: normal;
 }
 
 .header-link {
@@ -53,7 +49,6 @@
     line-height: 1.5;
     letter-spacing: 0.02em;
     cursor: pointer;
-    text-decoration: none;
     color: var(--dark-color);
 }
 
@@ -69,7 +64,6 @@
     line-height: 1.5;
     letter-spacing: 0.02em;
     font-style: normal;
-    list-style: none;
     color: var(--body-text-color);
 }
 .adress-link:hover,
@@ -89,7 +83,6 @@ body {
     list-style: none;
     text-decoration: none;
 }
-ul, ol {list-style-type: none;}
 
 /**
   |============================
@@ -125,7 +118,8 @@ ul, ol {list-style-type: none;}
 
 .hero-button:hover,
 .hero-button:focus {
-    color: var(--pressed-state-color)
+    color: var(--pressed-state-color);
+    background-color: var(--pressed-state-color);
 }
 /**
   |============================
@@ -203,9 +197,6 @@ ul, ol {list-style-type: none;}
   | Sections pictures
   |============================
 */
-.pictures-list {
-    list-style: none;
-}
 .picture-title {
     font-family: var(--title-font);
     font-weight: 500;
