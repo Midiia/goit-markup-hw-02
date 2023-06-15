@@ -19,7 +19,8 @@
   | Header styles
   |============================
 */
-.header {
+.link {
+    text-decoration: none;
 }
 .link-logo {
     font-family: 'Raleway', sans-serif;
@@ -37,6 +38,14 @@
     color: var(--hero-background-color);
 }
 
+.list {
+    list-style: none;
+}
+
+.adress-list {
+    font-style: normal;
+}
+
 .header-link {
     font-family: var(--title-font);
     font-size: 16px;
@@ -44,7 +53,6 @@
     line-height: 1.5;
     letter-spacing: 0.02em;
     cursor: pointer;
-    list-style: none;
     text-decoration: none;
     color: var(--dark-color);
 }
@@ -62,7 +70,6 @@
     letter-spacing: 0.02em;
     font-style: normal;
     list-style: none;
-    text-decoration: none;
     color: var(--body-text-color);
 }
 .adress-link:hover,
